@@ -1,0 +1,5 @@
+# vim: ft=sh
+
+# --- WIRELESS
+
+  'udev-rules-rfkill-uaccess' # Получение доступа к /dev/rfkill для пользователей

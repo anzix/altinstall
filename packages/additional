@@ -1,0 +1,84 @@
+# vim: ft=sh
+
+# --- TUI/CLI Утилиты и прочее необходимое
+
+ 'mpd' # Музыкальный демон
+ 'mpc' # CLI Музыкальный клиент для управления mpd
+ 'ncmpcpp' # TUI Музыкальный плеер, обвёртка для mpd
+ 'mediainfo' # CLI Информация о медиа
+ 'alsa-utils' # CLI Утилиты ALSA, в числе которых alsamixer и amixer
+ 'pulsemixer' # TUI Регулятор громкости PulseAudio.
+ 'btop' # TUI Диспетчер задач
+ 'hexedit' # TUI HEX-редактор
+ 'testdisk' # TUI Востановления данных из накопителей
+ 'hdparm' # CLI Проверка состояния S.M.A.R.T'а HDD и SSD
+ 'ncdu' # TUI Анализатор свободного места
+ 'fdupes' # CLI Поиск и удаление дубликатов файлов
+ 'radeontop' # TUI мониторинг AMD GPU
+ 'zbar' # CLI Сканер QR кодов
+ 'translate-shell' # CLI Переводчик в терминале
+ 'xdg-utils' # CLI инструменты для решения различных задач с интеграцией рабочего стола
+ 'jq' # CLI обработчик JSON
+ 'tree' # Древовидный список
+ 'eza' # Замена ls
+ 'bat' # Замена cat (команда: batcat)
+ 'ripgrep' # Замена grep
+ 'fd' # Замена find
+ 'packagekit-command-not-found' # Авто поиск отсутствующих при запросе пакетов/библиотек (не работает)
+ 'inxi' # Системная информация PC
+ 'hwinfo' # Системная информация
+ 'gvfs-backends' # Содержит разлчные движки для передачи, напр. Android MTP
+ 'gvfs' # Поддержка мусорки для файлого менеджера
+ 'libgtk+2' # Для устаревших программ
+ 'yt-dlp' # Скачивать видео
+ # (Нету) 'gallery-dl' # CLI утилита для скачивания с различных платформ (deviantart, pixiv и т.д) без регистрации и смс
+ 'streamlink' # CLI просмотр потоков Twitch/YouTube и т.д
+ 'btfs' # Файловая система Bittorrent, основанная на FUSE. Для просмотра онлайн торрентов
+ 'ffmpeg' # Конвертер/Декодер/Рекордер видео
+ 'notify-send' # Информирование используя notify-send
+ 'net-tools' # Для прослушивания портов
+ 'tesseract' # OCR сканер
+ 'tesseract-langpack-ru' 'tesseract-langpack-en' 'tesseract-langpack-ja' # База данных языков
+ 'hunspell' # Библиотека для проверка орфоргафии
+ # (Удалён) 'hunspell-en' # Английский словарь для проверки орфоргафии
+ # (Удалён) 'hunspell-ru' # Русский словарь для проверки орфографии (работает только с UTF8 кодировкой)
+ 'atool' # Для предпросмотра архивов
+ 'faketime' # CLI утилита чтобы подделывать время для программ или пиратских игр (man faketime)
+ 'perl-Image-ExifTool' # Утилита для удаления метаданных изображений (man exiftool)
+ 'flashrom' # Для прошивания чипов программатором ch341a
+ 'dfu-util' # Для обновления прошивки паяльника Pinecil первой версии
+ 'tmux' # Мультиплексор для одноконных терминалов (напр. alacritty)
+ 'scrcpy' # Демонстрация экрана Android для Linux используя USB ADB
+ 'i2pd' # Невидимый интернет протокол
+ 'cdemu-client' # Эмуляция CD/DVD привода для iso/mds/nrg образов
+ 'transmission-cli' # Для замены passkey в торрент файлах и многое другое
+ 'java-21-openjdk' # Библиотека Java 21 (для Minecraft)
+
+ 'libva-utils' # Проверка VA-API дравера (vainfo)
+ 'vdpauinfo' # Проверка VDPAU драйвера командой (vdpauinfo)
+ 'vulkan-tools' # Инструменты Vulkan такие как vulkaninfo
+
+ 'wayland-utils' # Информация отображающая Wayland информацию (wayland-info)
+
+# 'RHVoice-bin' 'RHVoice-Russian' 'RHVoice-English' # Синтезатор речи + голоса (Английский + Русский)
+
+# --- Security
+
+ 'nmap' # Утилита для исследования сети и сканер портов
+
+# --- DEV
+
+ 'gdb' # Отладчик
+ 'clang' 'clang-tools' # clang с clang-tidy, clang-query и clang-format
+ 'ltrace' # Отображение вызовов динамической библиотеки процесса.
+ 'cloc' # CLI утилита позволяющая считать кол-во строк кода/комментарий
+ 'doxygen' # Документация/аннотации для C/C++, Java, IDL и PHP
+ 'graphviz' # ПО для визуализированных графиков (содержит CLI утилиту dot и другие)
+ # 'gperftools' # Анализ производительности C++ ПО и для выявления утечек пямяти
+ # 'libgtest-devel' # Google Test - C++ testing utility
+# 'npm' # Для neovim (много пакетов)
+# 'yarn' # Для neovim плагина https://github.com/iamcco/markdown-preview.nvim
+# 'tidy' # Инструмент для приведения HTML-кода к чистому стилю
+# 'docker-cli' 'docker-compose-v2' # Docker контейнер
+# 'podman' 'podman-compose' # Контейнеры, альтернатива docker'у
+# 'distrobox' # Утилита контейнеризации окружения Linux

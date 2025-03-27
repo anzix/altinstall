@@ -1,0 +1,90 @@
+# vim: ft=sh
+
+# --- ОСНОВНОЕ
+
+ 'systemd' 'systemd-analyze' # Systemd
+ 'build-essential' # Пакеты для сборки
+ 'kernel-image-6.12' 'kernel-modules-drm-6.12' 'kernel-modules-staging-6.12' 'kernel-headers-6.12'
+ 'kernel-modules-v4l2loopback-6.12' # Для создания виртуальной камеры в OBS
+ 'firmware-intel-ucode' # Микрокод для процессоров Intel
+ 'zsh' 'git'
+ 'sudo' 'su'
+ 'eepm' 'alien' 'eepm-rpm-build' 'dpkg' # Единый пакетный менеджер, для третье-сторонних пакетов + доп. пакеты для сборки из deb в rpm
+ 'apf' # Искать содержимое фалов в пакетах
+ 'apt-repo' # Удобная утилита по смене репозиториев Alt Linux
+ 'update-kernel' # Удобная утилита по обновлению ядра Alt Linux
+ 'shadow-change' 'shadow-groups' # Утилиты для работы с shell (chsh), и групами (gpasswd)
+ 'console-scripts' 'kbd' # База шрифтов для TTY и команда setfont'
+ 'iputils' # Команда ping и т.д
+ 'accountsservice' # Манипуляция пользовательской инфомацией аккаунта
+ 'tzdata' # Данные связанные с таймзоной
+ 'blacklist-pcspkr' # Отключение модуля pc спикера
+ 'autofs' # Автомонтирование с таймером неактивности (поставляет systemd сервис)
+ 'disable-usb-autosuspend' # Отключает усыпление usb портов (работает как модуль ядра)
+ 'wget' 'curl' # Для скачивания файлов
+ 'neovim' # Консольный текстовый редактор
+ 'grub-efi' 'efibootmgr' # Загрузчик
+ 'NetworkManager' # Менеджер сети
+ 'htop' # Простой консольный диспетчер задач
+ 'xdg-user-dirs' # Создание пользовательских XDG директории
+ 'aptitude' # CLI Средство управления пакетами и просматра дерево зависимостей
+ 'openssh-common' 'openssh-server' # SSH соединение
+ 'ca-certificates' # Без этого нибудет работать git и интернет
+ 'fastfetch' # Чтобы выпендриватся
+ 'exfatprogs' # Поддержка файловой системы exFAT (Для sd-карт)
+ 'ntfs-3g' # Поддержка файловой системы NTFS
+ 'dosfstools' # Поддержка файловой системы vFAT
+ 'f2fs-tools' # Поддержка файловой системы f2fs
+ 'xfsprogs' # Поддержка файловой системы xfs
+ 'btrfs-progs' # Поддержка файловой системы btrfs
+ 'mtools' # Утилиты для доступа к MS-DOS дискам
+ 'smartmontools' # Для информации и проверки состояния здоровья HDD и SSD
+ 'rsync' # Быстрый и универсальный инструмент для копирования удаленных и локальных файлов
+ 'stow' # Менеджер sim-link'ов (для менеджмента dotfiles)
+ # (нету в p11) 'zram-generator' # Подкачка (systemd)
+ 'mlocate' # Индексирование файлов и из поиск
+ 'dbus-broker' # Оптимизированная система шины сообщений
+ 'ccache' # Ускоряет перекомпиляцию за счет кэширования предыдущих компиляций
+ 'man-db' # Мануалы
+ 'unzip' 'unrar' 'p7zip' 'zip' # Архивирование и распаковка файлов zip/rar/7z
+
+# --- XORG
+
+ 'xterm' # Терминал для TTY
+ 'xinit' # XOrg инициализация
+ 'xauth' # X authority file utility
+ 'xorg-server' # XOrg сервер
+ 'xorg-apps' # Полный набор программ
+ 'xorg-drv-amdgpu' # Открытые драйвера AMDGPU
+ 'xclip' # Поддержка буфер обмена
+ 'xev' # Печатать ивентов для клавиш командой xev
+
+# --- ВИДЕО [OPENGL+VULKAN]
+
+ # AMD
+
+ 'mesa-dri-drivers' # Версия OpenGL с открытым исходным кодом (содержит H.264/H.265, VDPAU и VA-API драйвер)
+
+# --- АУДИО
+
+ 'pipewire'
+ 'pipewire-utils' # Утилиты
+ 'pipewire-libs' # Нужные библиотеки для совместимости с разным софтом
+ 'pipewire-jack' # 'pipewire-jack:i386'
+ 'wireplumber' # Modular session / policy manager for PipeWire
+ 'pulseaudio-utils' # Инструменты для проверки аудиодрайвера, например pactl
+
+ 'ladspa-noise-suppression-for-voice' # Плагин подавления шума микрофона в реальном времени (Pipewire only)
+
+ 'gstreamer1.0'
+ 'gst-libav'
+ 'gst-plugins-base1.0'
+ 'gst-plugins-good1.0'
+ 'gst-plugins-bad1.0' 'gst-plugins-ugly1.0' # Библеотеки для воспроизведения мультимедия (для запуска старья)
+ 'gstreamer-vaapi' # Эффективный плагин кодировщик для RDNA1 AMDGPU (для использования нужен AUR пакет obs-gstreamer)
+
+# --- BLUETOOTH
+
+ 'bluez' # Демон для стека протокола Bluetooth
+ 'obexd' # Поддержка передачи файлов по Bluetooth (наверное)
+

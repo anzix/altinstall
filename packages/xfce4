@@ -1,0 +1,19 @@
+# vim: ft=sh
+
+# --- Основные пакеты Xfce (без мусора от Alt Linux)
+
+ 'xfce4-default' # Содержит минимальный набор пакетов для окружения Xfce
+ 'xfce-polkit' # Аутентификационный агент для повышения привилегий в графическом ПО
+ 'xfce4-pulseaudio-plugin' # Модуль Pulseaudio для панели Xfce (трей)
+ 'xfce4-clipman-plugin' # Модуль Clipman для панели, поддержка менеджера буфера обмена
+ 'xfce4-xkb-plugin' # Модуль для переключения раскладки для панели
+ 'lightdm' # Дисплейный менеджер для Xfce
+
+# -- Программы для Xfce
+
+ 'xfce4-screenshooter' # Скриншотилка
+
+# --- Допольнительные пакеты
+
+ 'pavucontrol' # Микшер Pulseaudio
+ 'NetworkManager-applet-gtk' # GUI Аплет для конфигурации Network Manager

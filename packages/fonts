@@ -1,0 +1,17 @@
+# vim: ft=sh
+
+# --- ШРИФТЫ
+
+ # Шрифты семейства Nerd нету в репозиториях Debian, устанавливай вручную
+
+ 'fonts-ttf-ms' # Microsoft'овские шрифты (вроде)
+ 'fonts-console-terminus' # Terminus шрифты для TTY
+ 'fonts-bitmap-terminus' # ?
+ # (нету в p11) 'fonts-ttf-symbols-nerd' # Набор иконок для терминала
+ 'fonts-font-awesome' # Для появления монотонных значков и иконок
+ 'fonts-ttf-open-sans' # Шрифт для Телеграмма
+ 'fonts-ttf-liberation' # Начальный набор шрифтов, для совместимости со Steam и Firefox
+ 'fonts-ttf-dejavu' # Начальный набор шрифтов
+ 'fonts-otf-google-noto-cjk' # Набор Азиатских шрифтов, много весят
+ 'fonts-ttf-google-noto-emoji' # Смайлы в терминал
+ 'fonts-ttf-google-noto*' # Необходимые Google'овские шрифты, разные иероглифы и т.д.

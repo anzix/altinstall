@@ -1,0 +1,59 @@
+# vim: ft=sh
+
+# --- Основные пакеты для окружения KDE Plasma
+
+ 'kde' # Основной пакет Plasma вместе с дополительным ПО в составе Alt Linux
+
+# --- Опциональные зависимости Plasma и дополнения
+
+ 'kgamma' # Управлением гаммой монитора
+ 'kwayland-integration' # Интеграция Wayland для приложений Qt5
+
+ # (нету) 'plasma-firewall' # Поддержка управления панели Firewall
+ 'plasma-vault' # Апплет Plasma и сервисы для создания зашифрованных хранилищ
+ # (только source) 'kwallet-pam' # Поддержка интеграции PAM
+ 'plasma-workspace-wallpapers' # Дополнительные обои для окружения Plasma
+ # (только source) 'breeze-gtk' # Улучшение интеграции приложений GTK
+
+ 'flatpak-kcm' # Интеграция разрешений Flatpak
+
+
+ # 'sddm' 'sddm-kcm' # Дисплей менеджер и модуль для управления SDDM
+
+# --- Семейство KDE программ
+
+ 'kcolorchooser' # Инструмент для работы с цветовой палитрой
+ 'partitionmanager' # Менеджер дисков KDE
+
+# --- Non-Plasma пакеты (дополнения, расширения и т.д)
+
+ 'dolphin-plugins' # Добавляет действия для git, mount и umount для iso
+ 'ffmpegthumbs' # Предпросмотрщик видео для проводника dolphin
+# 'icoutils' # Отобраения иконок для wine (exe файлов) в dolphin
+ 'xapp-appimage-thumbnailer' # Отображения иконок для AppImage в dolphin
+ 'kio-admin' # Поддержка управления файлами от имени администратора для dolphin
+# 'ksystemlog' # Просмоторщик системных логов
+# 'kdeconnect' # Управление Linux с Android
+ 'qt5-phonon-backend-5-gstreamer' # Бэкенд для Qt5
+
+# --- Сторонние пакеты
+
+ 'xdg-desktop-portal-gtk' # Улучшение интеграции между порталами с GTK приложениями
+ 'xsettingsd' # Применять настройки GTK приложений на лету
+ 'wl-clipboard' # Копирование+вставка из буфера обмена Wayland
+
+# --- KDE/QT программы
+
+ 'fooyin' # QT альтернатива Foobar2000 на Linux
+ 'audacious' # Аудиоплеер с поддержкой скинов Winamp
+ 'keepassxc' # Локальный менеджер паролей
+ 'qbittorrent' # Торрент клиент
+ 'qpwgraph' # GUI управления узлами PipeWire (QT)
+# 'doublecmd-qt' # Альтернатива Total Commander
+# 'krita' # Рисование
+# 'kdiskmark' # Бенчмарк для накопителей
+# 'okteta' # QT Hex редактор
+
+# --- Дополнительные пакеты Plasma
+
+ 'sshfs'

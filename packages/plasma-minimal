@@ -1,0 +1,84 @@
+# vim: ft=sh
+
+# --- Основные пакеты для окружения KDE Plasma
+
+ 'kde-mini' # Мини набор пакетов без раздутости Alt Linux
+ 'kdeplasma-addons' # Дополнения для Plasma
+
+# --- Опциональные зависимости Plasma и дополнения
+
+ 'kscreen' # Поддержка параметров экрана (менять разрешение, герцовку и т.д)
+ 'kgamma' # Управлением гаммой монитора
+ 'bluedevil' # Поддержка Bluetooth
+ 'plasma-nm' # Поддержка Network Manager
+ 'plasma-pa' # Поддержка PulseAudio (Pipewire)
+ 'kinfocenter' # Центер о системе в настройках
+ 'kwayland-integration' # Интеграция Wayland для приложений Qt5
+
+ 'plasma-disks' # Контролирует устройства с поддержкой SMART на предмет неминуемого сбоя
+ # (нету) 'plasma-firewall' # Поддержка управления панели Firewall
+ 'plasma-vault' # Апплет Plasma и сервисы для создания зашифрованных хранилищ
+ # (только source) 'kwallet-pam' # Поддержка интеграции PAM
+ 'plasma-workspace-wallpapers' # Дополнительные обои для окружения Plasma
+ 'ksshaskpass' # Помощник ssh-add, использующий kwallet и kpassworddialog
+ # (только source) 'breeze-gtk' # Улучшение интеграции приложений GTK
+ 'kde-gtk-config' # Конфигуратор GTK2 и GTK3 для KDE
+
+ 'flatpak-kcm' # Интеграция разрешений Flatpak
+
+ 'xdg-desktop-portal-kde' # KDE'шный XDG портал
+
+ 'sddm' 'sddm-kcm' # Дисплей менеджер и модуль для управления SDDM
+
+# --- Семейство KDE программ
+
+ 'ark' # Архиватор
+ 'dolphin' # Проводник
+ 'gwenview' # Просмоторщик изображений
+ 'kate' # Тектовый редактор
+ 'kcalc' # Калькулятор
+ 'kcolorchooser' # Инструмент для работы с цветовой палитрой
+ 'konsole' # Консоль
+ 'kwalletmanager' # Инструмент управления кошельком
+ 'okular' # Просмоторщик документов
+ 'partitionmanager' # Менеджер дисков KDE
+ 'plasma-systemmonitor' # Системный монитор
+ 'spectacle' # Скриншотер
+
+# --- Non-Plasma пакеты (дополнения, расширения и т.д)
+
+ 'dolphin-plugins' # Добавляет действия для git, mount и umount для iso
+ 'kio-extras' # Допольнительный функционал KIO (для проводника dolphin)
+ 'ffmpegthumbs' # Предпросмотрщик видео для проводника dolphin
+# 'icoutils' # Отобраения иконок для wine (exe файлов) в dolphin
+ 'xapp-appimage-thumbnailer' # Отображения иконок для AppImage в dolphin
+ 'kio-admin' # Поддержка управления файлами от имени администратора для dolphin
+# 'ksystemlog' # Просмоторщик системных логов
+ 'kf6-kimageformats' # Добавляет поддержку форматов avif, jxl, xcf, psd для gwenview
+ 'kdenetwork-filesharing' # Делится каталогом по локальной сети используя Samba
+# 'kdeconnect' # Управление Linux с Android
+ 'qt5-phonon-backend-5-gstreamer' # Бэкенд для Qt5
+
+# --- Сторонние пакеты
+
+ 'xdg-desktop-portal-gtk' # Улучшение интеграции между порталами с GTK приложениями
+ 'xsettingsd' # Применять настройки GTK приложений на лету
+ 'wl-clipboard' # Копирование+вставка из буфера обмена Wayland
+
+# --- KDE/QT программы
+
+ 'haruna' # Видеоплеер
+ 'fooyin' # QT альтернатива Foobar2000 на Linux
+ 'audacious' # Аудиоплеер с поддержкой скинов Winamp
+ 'keepassxc' # Локальный менеджер паролей
+ 'qbittorrent' # Торрент клиент
+ 'qpwgraph' # GUI управления узлами PipeWire (QT)
+# 'sweeper' # Графическая чистилка (cookie, cache и т.д)
+# 'doublecmd-qt' # Альтернатива Total Commander
+# 'krita' # Рисование
+# 'kdiskmark' # Бенчмарк для накопителей
+# 'okteta' # QT Hex редактор
+
+# --- Дополнительные пакеты Plasma
+
+ 'sshfs'
