@@ -151,7 +151,7 @@ TODO: Не проверено
 1. Обновляем репозитории и скачиваем последние обновления текущей платформы p10
 
    ```sh
-   # И
+   # Используем apt-get команду
    sudo apt-get update && sudo apt-get dist-upgrade
    # Или используя epm
    epm full-upgrade
@@ -194,6 +194,8 @@ TODO: Не проверено
 
    - `std-def` - это стандартное стабильное ядро
    - `un-def` - это самое свежее ядро
+
+   Вводим команду
 
    ```sh
    sudo update-kernel -t std-def
