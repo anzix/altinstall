@@ -17,3 +17,4 @@
 
  'pavucontrol' # Микшер Pulseaudio
  'NetworkManager-applet-gtk' # GUI Аплет для конфигурации Network Manager
+ 'xarchiver' # Менеджер архивов

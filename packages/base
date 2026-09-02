@@ -2,7 +2,7 @@
 
 # --- ОСНОВНОЕ
 
- 'systemd' 'systemd-analyze' # Systemd
+ 'systemd' 'systemd-analyze' 'systemd-coredump' # Systemd
  'build-essential' # Пакеты для сборки
  'kernel-image-6.12' 'kernel-modules-drm-6.12' 'kernel-modules-staging-6.12' 'kernel-headers-6.12'
  'kernel-modules-v4l2loopback-6.12' # Для создания виртуальной камеры в OBS
