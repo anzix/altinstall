@@ -50,7 +50,7 @@ apt-get update && apt-get upgrade -yy --enable-upgrade
 apt-get dist-upgrade -yy
 
 # Установка необходимых пакетов
-#  zram-generator не доступен у p11
+#  zram-generator не доступен в p11
 # FIXME: Установка должна происходить из входного файла с обработкой
 apt-get update && apt-get install -yy kernel-image-6.12 kernel-headers-6.12 kernel-modules-drm-6.12 kernel-modules-staging-6.12 systemd hwclock sudo su fonts-console-terminus console-scripts kbd neovim git zsh htop fastfetch wget curl dbus-broker efibootmgr man man-db grub-efi mlocate fonts-console-terminus NetworkManager openssh-common openssh-server build-essential ca-certificates blacklist-pcspkr xdg-user-dirs btrfs-progs shadow-change notify-send
 
@@ -135,8 +135,8 @@ if [ "${FS}" = 'btrfs' ]; then
   btrfs subvolume delete /.snapshots /home/.snapshots
 
   # Пересоздаём и переподключаем /.snapshots и /home/.snapshots
+  # INFO: Переподключение по записи fstab будет после входа в систему
   mkdir -v /.snapshots /home/.snapshots
-  mount -v -a
 
   # Меняем права доступа для легкой замены снимка @ в любое время без потери снимков snapper.
   chmod -v 750 /.snapshots /home/.snapshots
@@ -205,6 +205,7 @@ if [ "${FS}" = 'btrfs' ]; then
 fi
 
 # Размер Zram
+# INFO: В p11 нету systemd zram-generator поэтому это здесь пропускается
 # tee -a /etc/systemd/zram-generator.conf >> /dev/null << EOF
 # [zram0]
 # zram-size = min(min(ram, 4096) + max(ram - 4096, 0) / 2, 32 * 1024)
@@ -220,8 +221,8 @@ fi
 sed -i 's/^GRUB_CMDLINE_LINUX_DEFAULT=.*/GRUB_CMDLINE_LINUX_DEFAULT="loglevel=3 mitigations=off intel_iommu=on iommu=pt amdgpu.ppfeaturemask=0xffffffff cpufreq.default_governor=performance zswap.enabled=0"/g' /etc/default/grub
 
 # Рекурсивная правка разрешений в папке скриптов
-# chmod -R 700 /altinstall
-# chown -R 1000:users /altinstall
+chmod -R 700 /altinstall
+chown -R 1000:users /altinstall
 
 # Врубаю сервисы
 # BTRFS: discard=async можно использовать вместе с fstrim.timer
